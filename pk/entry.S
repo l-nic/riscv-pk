@@ -33,8 +33,8 @@
   STORE  x27,27*REGBYTES(x2)
   STORE  x28,28*REGBYTES(x2)
   STORE  x29,29*REGBYTES(x2)
-  STORE  x30,30*REGBYTES(x2)
-  STORE  x31,31*REGBYTES(x2)
+  # STORE  x30,30*REGBYTES(x2)
+  # STORE  x31,31*REGBYTES(x2)
 
   # get sr, epc, badvaddr, cause
   csrrw  t0,sscratch,x0
@@ -109,8 +109,8 @@ start_user:
   LOAD  x27,27*REGBYTES(a0)
   LOAD  x28,28*REGBYTES(a0)
   LOAD  x29,29*REGBYTES(a0)
-  LOAD  x30,30*REGBYTES(a0)
-  LOAD  x31,31*REGBYTES(a0)
+  # LOAD  x30,30*REGBYTES(a0)
+  # LOAD  x31,31*REGBYTES(a0)
   # restore a0 last
   LOAD  x10,10*REGBYTES(a0)
 
